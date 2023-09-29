@@ -23,7 +23,7 @@ def test_registration_form():
     browser.element('#currentAddress').type('Pyshkina-kolotushkina, Moscow, Russia')
     browser.element('#react-select-3-input').type('Utt').press_enter()
     browser.element('#react-select-4-input').type('Lu').press_enter()
-    browser.element('#submit').click()
+    browser.element('#submit').execute_script('element.click()')
     time.sleep(20.0)
 
 
